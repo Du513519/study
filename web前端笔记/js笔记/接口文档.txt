@@ -1,0 +1,88 @@
+查询接口：
+请求方式:get
+请求地址:http://192.168.90.189/user/search
+参数：无
+响应数据格式:
+{
+  "code": "string",//本次业务状态
+  "list": [//本次查询的数组数据
+    {}
+  ],
+  "message": "string",//文字消息
+  "object": {}//查询的对象数据
+}
+
+
+根据ID接口：
+请求方式:get
+请求地址:http://192.168.80.60/user/searchById
+参数：{id:number}
+响应数据格式:
+{
+  "code": "string",//本次业务状态
+  "list": [//本次查询的数组数据
+    {}
+  ],
+  "message": "string",//文字消息
+  "object": {}//查询的对象数据
+}
+
+更新接口：
+请求方式:post
+请求地址:http://192.168.90.189/user/update
+参数：
+{
+	id:number,
+	username:string,
+	password:string,
+	phone:string,
+	age:number,
+	sex:number
+}
+响应数据格式:
+{
+  "code": "string",//本次业务状态
+  "list": [//本次查询的数组数据
+    {}
+  ],
+  "message": "string",//文字消息
+  "object": {}//查询的对象数据
+}
+
+新增接口：
+请求方式:post
+请求地址:http://192.168.90.189/user/add
+参数：
+{
+	username:string,
+	password:string,
+	phone:string,
+	age:number,
+	sex:number
+}
+响应数据格式:
+{
+  "code": "string",//本次业务状态
+  "list": [//本次查询的数组数据
+    {}
+  ],
+  "message": "string",//文字消息
+  "object": {}//查询的对象数据
+}
+
+删除接口:
+请求方式:post
+请求地址:http://192.168.90.189/user/delete
+参数：
+{
+	id:number
+}
+响应数据格式:
+{
+  "code": "string",//本次业务状态
+  "list": [//本次查询的数组数据
+    {}
+  ],
+  "message": "string",//文字消息
+  "object": {}//查询的对象数据
+}

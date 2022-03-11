@@ -1,0 +1,49 @@
+31. uniapp进行条件编译的两种方法？（4分）
+答：
+通过 #ifdef、#ifndef 
+
+
+32. Vue中响应式实现的原理，核心函数是什么？（4分）
+答：
+数据劫持+订阅发布模式(观察者模式) 
+核心函数：Object.defineProperty()
+
+
+33. 谈谈你对单项数据流的理解。（4分）
+答：
+1 子组件可以通过props来接受父组件传递过来的数据，但是无法修改该数据
+2 父组件数据发生改变，子组件也会自动同步 
+
+
+34. Vue组件通讯的方法（8分）
+答：
+1 props+$emit
+2 bus
+3 vuex
+4 插槽
+
+
+
+35  小程序中 bindtab和catchtap的区别 （4分）
+都是点击事件，bindtap不会阻止冒泡，catchtap是阻止冒泡的
+
+
+36 vue性能优化(6分)
+答：
+1 对象层级不要过深
+2 使用 Object.freeze() 冻结数据
+冻结后对象属性变为只读，不可更改或删除，同时也会阻止vue的响应式（无法劫持，也就无法触发set和get方法）,如果有一个巨大的数组或Object，并且确信数据不会修改，使用Object.freeze()可以让性能大幅提升。
+
+参考：https://www.cnblogs.com/mengfangui/p/9084302.html
+
+3 v-if 和 v-show 区分使用场景
+v-show：切换元素隐藏显示频繁时使用，反之v-if
+4 computed 和 watch 区分场景使用
+
+4.1. watch擅长处理的场景：一个数据影响多个数据
+4.2. computed擅长处理的场景：一个数据受多个数据影响 （购物车总价）
+
+
+5 v-for 遍历添加加 key，key最好是id值（唯一字段）
+6 路由懒加载
+7 适当采用 keep-alive 缓存组件

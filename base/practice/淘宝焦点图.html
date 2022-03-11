@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .tb {
+            position: relative;
+            width: 706px;
+            height: 405px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+        
+        .tb img {
+            width: 706px;
+            height: 405px;
+        }
+        
+        .prev {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -15px;
+            width: 20px;
+            height: 30px;
+            background: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            text-decoration: none;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        
+        .you {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -15px;
+            width: 20px;
+            height: 30px;
+            background: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            text-decoration: none;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        
+        .nav {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            margin-left: -37px;
+            width: 70px;
+            height: 13px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 7px;
+        }
+        
+        .nav li {
+            float: left;
+            margin: 3px;
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+        
+        .nav .selectde {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tb">
+        <img src="../pic/a1f47b1a23c5b2e6f253212cc92beac.png" alt="">
+        <!-- 左侧 -->
+        <a href="" class="prev">
+            < </a>
+                <!-- 右侧 -->
+                <a href="" class="you"> > </a>
+                <!-- 小圆点 -->
+                <ul class="nav">
+                    <li class="selectde"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+    </div>
+</body>
+
+</html>

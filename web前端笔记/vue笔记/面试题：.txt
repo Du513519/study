@@ -1,0 +1,9 @@
+v-model的原理
+v-model参考是MVVM模型: M-V-VM
+v-model只是一个语法糖 （@input/change事件  +  :value的语法糖）
+	更改数据----》更改视图 ：通过vue自身的响应式系统+:value属性来使用
+                 更改视图----->更改数据： 通过@input/@change事件来实现
+
+响应式系统:数据劫持(defineProperty)
+
+

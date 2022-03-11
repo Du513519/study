@@ -1,0 +1,111 @@
+1 vue生命周期有哪些？
+beforeCreate     created
+beforeMount   mounted
+beforeUpdate     updated
+beforeDestroy  destroyed
+
+errorCaptured  在捕获一个来自后代组件的错误时被调用。
+activated   被 keep-alive 缓存的组件激活时调用。
+deactivated  被 keep-alive 缓存的组件失活时调用。
+
+2 watch和computed的区别
+watch中的函数是不需要调用的
+computed内部的函数调用的时候不需要加()
+watch 监听事件    监听的是data或者computed中的数据，只有数据发生改变，事件就会触发  使用场景 ：一对多
+computed 计算属性     通过data中的数据来计算一个数据，只有源数据发生改变，计算属性会重新计算，渲染页面，使用场景，多对一，如购物车计算总价 
+computed 属性的结果会被缓存，除非依赖的响应式属性变化才会重新计算。主要当作属性来使用；
+
+
+3 vuex是什么，有哪些属性，分别有什么作用
+Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式，vuex就是用来存储公共数据、函数的仓库
+vuex 是中央仓库   主要用于组件的数据存储
+有个属性，分别是
+state，  存储全局数据
+getters， 全局计算属性
+mutations， 用于修改state的数据
+actions：存储公共函数
+modules；模块
+
+4 同源策略是什么
+同源策略是浏览器为了网络安全是一种协议，，指的是浏览器对不同源的脚本或者文本的访问方式进行的限制。所谓同源，就是指两个页面具有相同的协议，主机（也常说域名），端口，三个要素缺一不可。
+
+5 ==和===的区别
+双等不区分类型是否相等，如2==‘2’，为true；
+三等区分类型是否相等        2===‘2’，为false；
+
+
+6 什么叫前端工程化
+主要为了提高开发过程中的开发效率，减少不必要的重复工作时间。
+
+7 说说vue组件通信的方法
+有三种方法
+1.父传子    自定义属性  +props   子传父   自定义函数
+2.bus
+3.vuex
+
+
+8 你会哪些vue性能优化
+编码阶段
+
+尽量减少data中的数据，data中的数据都会增加getter和setter，会收集对应的watcher
+v-if和v-for不能连用
+如果需要使用v-for给每项元素绑定事件时使用事件代理
+SPA 页面采用keep-alive缓存组件
+在更多的情况下，使用v-if替代v-show
+key保证唯一
+使用路由懒加载、异步组件
+防抖、节流
+第三方模块按需导入
+长列表滚动到可视区域动态加载
+图片懒加载
+将一些常用的方法封装成library发布到npm上，然后在多个项目中引用
+也会将一些公用的组件封装成一个单独的项目然后使用webpack打包发布到npm上
+SEO优化
+
+预渲染
+服务端渲染SSR
+打包优化
+
+压缩代码
+Tree Shaking/Scope Hoisting
+使用cdn加载第三方模块
+多线程打包happypack
+splitChunks抽离公共文件
+sourceMap优化
+用户体验
+
+使用loading或者骨架屏
+PWA
+封装一个svg的组件来使用iconfont上的彩色图标，丰富页面
+
+还可以使用缓存(客户端缓存、服务端缓存)优化、服务端开启gzip压缩等。
+
+1、使用路由懒加载
+2、合理使用v-show
+3、利用vuex定义公共函数，减少代码量
+
+9 vue修饰符有哪些
+事件修饰符：
+		stop 阻止冒泡
+		parent 阻止默认
+
+	v-model修饰符：
+		number 数字类型
+		lazy 应用change事件
+		trim 去空格
+	按键修饰符：
+		enter、space。。。
+	系统修饰符：
+		Ctrl、alt、shift、windows、tab
+
+provent  阻止默认
+once       只执行一次
+stop         阻止冒泡
+
+
+10  vue中虚拟dom的理解
+参考了mvvm模型
+m -model -模型
+v - view -界面
+vm - 虚拟界面
+vue利用自身的响应式系统可以达到改变数据就改变页面的效果

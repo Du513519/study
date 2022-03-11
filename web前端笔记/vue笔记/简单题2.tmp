@@ -1,0 +1,53 @@
+四、 简答题（共30分）
+27. $route 和 $router 有什么区别。（4分）
+1 $route对象
+ $route对象表示当前的路由信息对象
+    1 $route.params      。
+    2 $route.query     
+     3 $route.meta  
+2 $router对象
+$router对象是全局路由的实例，是router构造方法的实例。
+路由实例方法：
+1、push
+2、go
+3、replace
+
+
+28.在组件中，获取动态路由中的参数有哪些方式？（4分）
+
+1. this.$route.params、query
+2. 通过 props，在路由配置文件中 props: true
+
+
+29.Vue Router 中实现路由跳转的方式有哪些？（4分）
+
+router-link to   路径/名字
+this.$router.push()
+
+this.$router.replace()
+this.$router.go()
+
+
+30.Vue Router 中通过路由传参的方式有哪些？（4分）
+
+
+1.通过 /参数    前置：配置了动态路由
+
+2.通过?k=v
+
+3  通过{path:’’,query:{k:V}}
+
+
+31.什么是路由懒加载？为什么要使用路由懒加载？（4分）
+
+通过 () => import() 加载组件，只有当路由匹配成功时，才开始加载对应的组件。
+性能优化，减少首屏加载的时间和大小
+
+
+
+32. Vuex 的核心属性有哪些？作用分别是什么？（10分）
+- state：保存数据，等同于组件中的 data
+- getters：保存从state中派生出来的数据，等同于组件中的computed
+- mutations：保存修改state的方法
+- actions：保存异步方法
+- modules：Vuex 模块化

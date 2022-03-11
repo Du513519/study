@@ -1,0 +1,25 @@
+ Native App   原生开发
+ Android 安卓
+mini program 微信小程序
+wechat 微信
+selectedIcon 选中的图标
+propagation 冒泡
+rich-text  富文本框
+swiper 滑块
+tap 手指触摸后马上离开	
+event 事件
+mark  标记
+onLaunch  初始化 	
+onShow   启动或切前台
+onHide    切后台
+globalData 公共数据
+navigator  导航
+redirectTo  重定向
+cloud 云
+cloudfunctions 云函数
+
+
+
+
+ 	 
+  

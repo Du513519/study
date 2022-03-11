@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .td {
+            position: relative;
+            width: 706px;
+            height: 405px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+        
+        .td img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .mask {
+            /* 隐藏遮罩层 */
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .3) url(../pic/下箭头.png) no-repeat center;
+        }
+        /* 当我们鼠标经过了土豆这个盒子，就让里面遮罩层显示出来 */
+        
+        .td:hover .mask {
+            /* 显示元素 */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="td">
+        <div class="mask"></div>
+        <img src="../pic/a1f47b1a23c5b2e6f253212cc92beac.png" alt="">
+    </div>
+    <div class="td">
+        <div class="mask"></div>
+        <img src="../pic/a1f47b1a23c5b2e6f253212cc92beac.png" alt="">
+    </div>
+    <div class="td">
+        <div class="mask"></div>
+        <img src="../pic/a1f47b1a23c5b2e6f253212cc92beac.png" alt="">
+    </div>
+    <div class="td">
+        <div class="mask"></div>
+        <img src="../pic/a1f47b1a23c5b2e6f253212cc92beac.png" alt="">
+    </div>
+</body>
+
+</html>
