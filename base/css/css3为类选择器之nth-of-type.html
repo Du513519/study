@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 第一个 */
+        
+        ul li:first-of-type {
+            background-color: pink;
+        }
+        /* 最后一个 */
+        
+        ul li:last-of-type {
+            background-color: pink;
+        }
+        
+        ul li:nth-of-type(n) {
+            background-color: pink;
+        }
+        /* nth-child会把所有的盒子都排列序号 */
+        /* 执行的时候首先看nth-child() 之后会去看前面div */
+        /* 所有没有执行出来 */
+        
+        section div:nth-child(1) {
+            background-color: red;
+        }
+        /* nth-of-type 会指定元素的盒子排列序号 */
+        /* 执行的时候首先看div指定的元素 之后会去看nth-of type(1)选的第几个孩子*/
+        
+        section div:nth-of-type(1) {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <section>
+            <p>光头强</p>
+            <div>熊大</div>
+            <div>熊二</div>
+        </section>
+    </ul>
+</body>
+
+</html>
