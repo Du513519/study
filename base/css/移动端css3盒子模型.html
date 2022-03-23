@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:nth-child(1) {
+            /* 传统盒子模型 */
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            padding: 10px;
+            border: 10px solid red;
+        }
+        
+        div:nth-child(2) {
+            /* 有了这句话就让盒子变成css3盒子模型 */
+            /* padding border 不会撑大盒子 */
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            padding: 10px;
+            border: 10px solid blue;
+        }
+        
+        a {
+            /* 清楚高亮色 */
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        input {
+            -webkit-appearance: none;
+        }
+        
+        img {
+            /* 禁止长按弹出菜单 */
+            -webkit-touch-callout: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <a href="#">黑马</a>
+    <input type="button" value="按钮">
+
+</body>
+
+</html>

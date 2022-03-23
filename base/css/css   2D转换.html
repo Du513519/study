@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .yi { */
+        /* 2D转换不会影响任何其他盒子 */
+        /* width: 200px; */
+        /* height: 200px; */
+        /* background-color: pink; */
+        /* x就是x轴上移动位置 y就是y轴上移动位置 中间用逗号分隔 */
+        /* transform: translate(x,y); */
+        /* transform: translate(100px, 100px); */
+        /* 如果我们只移动x坐标 */
+        /* transform: translate(100px, 0); */
+        /* transform: translateX(100px); */
+        /* 如果我们只移动Y坐标 */
+        /* transform: translate(0,100px); */
+        /* transform: translateY(100px); */
+        /* } */
+        /* .er { */
+        /* width: 100px;
+            height: 100px;
+            background-color: red; */
+        /* 我们transform里面的参数是可以用%的 */
+        /* 如果里面的参数是%移动的距离是盒子自身高度或者高度来对比的 */
+        /* 这里的50%就是50px 因为盒子的宽度是100px */
+        /* transform: translateX(50%); */
+        /* } */
+        
+        .san {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: green;
+        }
+        
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            /* margin-top: -100px;
+            margin-left: -100px; */
+            /* transform: translate(-50%, -50%);盒子往上走自己高度的一半 */
+            transform: translate(-50%, -50%);
+        }
+        /* transform对于行内元素是无效的 */
+    </style>
+</head>
+
+<body>
+    <!-- <div class="yi">1</div> -->
+    <!-- <div class="er">2</div> -->
+
+    <div class="san">
+        <p></p>
+    </div>
+</body>
+
+</html>

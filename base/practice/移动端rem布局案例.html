@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.媒体查询一般按照从小到大或者从大到小顺序来 */
+        /* 2.小于540px页面背景颜色变成蓝色 */
+        
+        @media screen and (max-width:539px) {
+            body {
+                background-color: blue;
+            }
+        }
+        /* 3.540-970背景颜色变为绿色 */
+        
+        @media screen and (min-width:540px) and (max-width:969px) {
+            body {
+                background-color: green;
+            }
+        }
+        /* 4.大于等于970 页面变成红的 */
+        
+        @media screen and (min-width:970px) {
+            body {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>
